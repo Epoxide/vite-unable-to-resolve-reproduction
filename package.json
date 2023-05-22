@@ -1,0 +1,16 @@
+{
+  "name": "vite-unable-to-resolve-reproduction",
+  "version": "1.0.0",
+  "description": "A minimal reproduction of an issue with unable to resolve some css files that was introduced in vite@4.3.0.",
+  "workspaces": [
+    "packages/vite-4.2.2",
+    "packages/vite-4.3.x"
+  ],
+  "scripts": {
+    "build:4.2.2": "npm run build -w vite-4.2.2",
+    "build:4.3.x": "npm run build -w vite-4.3.x"
+  },
+  "dependencies": {
+    "@phosphor-icons/web": "^2.0.3"
+  }
+}
